@@ -8,7 +8,7 @@ const getRandomDate = (): Date => {
   return new Date(randomTimestamp);
 };
 
-const generateRandomPost = (id: number) => {
+const generateRandomPost = (id: number): BlogPost => {
   const titles = [
     "Next.js Guide",
     "React Hooks Deep Dive",
@@ -33,7 +33,7 @@ const generateRandomPost = (id: number) => {
     text: text,
     image: `https://picsum.photos/seed/${id}/400/300`,
     publishDate: getRandomDate(),
-  } as BlogPost;
+  };
 };
 
 export async function GET(request: Request) {
