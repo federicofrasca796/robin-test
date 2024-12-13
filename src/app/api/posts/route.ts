@@ -8,7 +8,7 @@ const getRandomDate = (): Date => {
   return new Date(randomTimestamp);
 };
 
-const generateRandomPost = (id: number): BlogPost => {
+export const generateRandomPost = (id: number): BlogPost => {
   const titles = [
     "Next.js Guide",
     "React Hooks Deep Dive",

@@ -6,14 +6,14 @@ export default function PostList({ posts }: { posts: BlogPost[] }) {
   return (
     <div className="grid grid-cols-1 gap-4">
       {posts.map((post) => (
-        <PostList.Post key={post.id} post={post} />
+        <PostList.Card key={post.id} post={post} />
       ))}
     </div>
   );
 }
 PostList.displayName = "PostList";
 
-PostList.Post = function Post({ post }: { post: BlogPost }) {
+PostList.Card = function Post({ post }: { post: BlogPost }) {
   return (
     <a
       href={`/post/${post.id}`}
