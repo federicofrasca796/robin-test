@@ -1,4 +1,4 @@
-import { BlogPost } from "@/app/types";
+import { BlogPost } from "@/types/posts";
 import { NextResponse } from "next/server";
 
 const getRandomDate = (): Date => {
